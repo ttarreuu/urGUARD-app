@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AppFragment"
+    android:paddingHorizontal="50dp"
+    android:paddingBottom="50dp"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_2"
+        android:text="Welcome to urGUARD!"
+        android:textSize="15dp"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_1"
+        android:textStyle="normal"
+        android:textSize="12dp"
+        android:fontFamily="@font/nunito"
+        android:justificationMode="inter_word"
+        android:text="We believe that every woman has the right to feel safe and protected in any situation. urGUARD is here to provide a reliable and dependable security solution, especially during emergencies.\n\nWe understand that emergencies can happen unexpectedly, and that's why we have designed urGUARD with advanced features that will assist you in critical situations. With just a few taps, you can send an emergency signal and quickly and efficiently contact help.\n\nOur SOS alarm will notify people around you that you require immediate assistance. You can also activate the Send Current Location feature to provide information about your current whereabouts to those who are willing to help.\n\nWe recognize the importance of informing your trusted contacts about your emergency situation. With the Send Emergency Message feature, you can send an urgent message to your trusted contacts, informing them about the situation you're facing.\n\nWe are committed to continuously developing and improving urGUARD to remain your reliable security companion. Our hope is that by using this application, women can feel safer and more confident when dealing with emergency situations.\n\nThank you for choosing urGUARD as your security partner. We hope this application provides the protection and peace of mind you need."/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

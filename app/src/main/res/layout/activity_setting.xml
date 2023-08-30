@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:padding="50dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvsetting4_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:textColor="@color/tosca"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btn_return"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/return_icon"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvsetting4_1"
+        app:layout_constraintBottom_toBottomOf="@id/tvsetting4_1"
+        android:scaleType="fitXY"
+        android:background="?android:selectableItemBackground"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/tvsetting4_1"
+        app:layout_constraintBottom_toTopOf="@id/frame4_2"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@id/frame4_1"
+        app:layout_constraintBottom_toTopOf="@id/frame4_3"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintTop_toBottomOf="@id/frame4_2"
+        app:layout_constraintBottom_toTopOf="@id/frame4_7"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.025"
+        app:layout_constraintTop_toTopOf="@id/frame4_9"
+        app:layout_constraintBottom_toTopOf="@id/frame4_5"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.025"
+        app:layout_constraintTop_toBottomOf="@id/frame4_4"
+        app:layout_constraintBottom_toTopOf="@id/frame4_6"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.025"
+        app:layout_constraintTop_toBottomOf="@id/frame4_5"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_9"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/frame4_3"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_8"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/frame4_1"/>
+
+    <FrameLayout
+        android:id="@+id/frame4_9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/frame4_8"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/button"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toTopOf="@id/frame4_7"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_7"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/profile_icon"
+        app:layout_constraintTop_toTopOf="@id/frame4_1"
+        app:layout_constraintTop_toBottomOf="@id/tvsetting4_1"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_1"
+        app:layout_constraintRight_toRightOf="@id/frame4_1"
+        app:layout_constraintLeft_toLeftOf="@id/frame4_1"
+        app:layout_constraintWidth_percent="0.25"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvname4_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/img_profile"
+        app:layout_constraintLeft_toLeftOf="@id/frame4_1"
+        app:layout_constraintRight_toRightOf="@id/frame4_1"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_1"
+        app:layout_constraintHeight_percent="0.05"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/tvcontact4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunito"
+        android:text="Emergency Contact"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/frame4_2"/>
+
+    <EditText
+        android:id="@+id/etcontact4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/tvcontact4_1"
+        app:layout_constraintBottom_toTopOf="@id/etcontact4_2"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/etcontact4_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/etcontact4_1"
+        app:layout_constraintBottom_toTopOf="@id/etcontact4_3"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/etcontact4_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/etcontact4_2"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_2"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvmessage4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunito"
+        android:text="Emergency Text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/frame4_3"/>
+
+    <EditText
+        android:id="@+id/etmessage4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:padding="10dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/tvmessage4_1"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_3"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="top"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/frame4_4"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_4"
+        android:background="@drawable/button_2"
+        android:text="Send feedback"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/frame4_5"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_5"
+        android:background="@drawable/button_2"
+        android:text="Report a bug"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/frame4_6"
+        app:layout_constraintBottom_toBottomOf="@id/frame4_6"
+        android:background="@drawable/button_2"
+        android:text="About"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

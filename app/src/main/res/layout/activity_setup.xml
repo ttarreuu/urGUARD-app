@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="50dp"
+    tools:context=".SetupActivity">
+
+    <ImageView
+        android:id="@+id/logo1_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/long_logo"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <FrameLayout
+        android:id="@+id/frame1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1_1"
+        app:layout_constraintHeight_percent="0.9"/>
+
+    <FrameLayout
+        android:id="@+id/frame1_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/frame1_1"
+        app:layout_constraintBottom_toTopOf="@id/frame1_3"
+        app:layout_constraintHeight_percent="0.125"/>
+
+    <FrameLayout
+        android:id="@+id/frame1_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/frame1_2"
+        app:layout_constraintBottom_toTopOf="@id/frame1_4"
+        app:layout_constraintHeight_percent="0.275"/>
+
+    <FrameLayout
+        android:id="@+id/frame1_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/frame1_3"
+        app:layout_constraintBottom_toTopOf="@id/frame1_5"
+        app:layout_constraintHeight_percent="0.3"/>
+
+    <FrameLayout
+        android:id="@+id/frame1_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/frame1_1"
+        app:layout_constraintTop_toBottomOf="@id/frame1_4"
+        app:layout_constraintHeight_percent="0.05"/>
+
+    <TextView
+        android:id="@+id/tvname1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunito"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/frame1_2"/>
+
+    <EditText
+        android:id="@+id/etname1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintBottom_toBottomOf="@id/frame1_2"
+        app:layout_constraintTop_toBottomOf="@id/tvname1_1"
+        android:hint="ex: Jenny Doe"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvcontact1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunito"
+        android:text="Emergency Contact"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/frame1_3"/>
+
+    <EditText
+        android:id="@+id/etcontact1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/tvcontact1_1"
+        app:layout_constraintBottom_toTopOf="@id/etcontact1_2"
+        android:hint="ex: 08531234567"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/etcontact1_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/etcontact1_1"
+        app:layout_constraintBottom_toTopOf="@id/etcontact1_3"
+        android:hint="ex: 08531234567"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/etcontact1_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/etcontact1_2"
+        app:layout_constraintBottom_toBottomOf="@id/frame1_3"
+        android:hint="ex: 08531234567"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvmessage1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunito"
+        android:text="Emergency Text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/frame1_4"/>
+
+    <EditText
+        android:id="@+id/etmessage1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/container"
+        android:padding="10dp"
+        app:layout_constraintHeight_percent="0.225"
+        app:layout_constraintTop_toBottomOf="@id/tvmessage1_1"
+        app:layout_constraintBottom_toBottomOf="@id/frame1_4"
+        android:hint="This text will be sent when you press the button"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="15dp"
+        android:gravity="top"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/frame1_5"
+        app:layout_constraintBottom_toBottomOf="@id/frame1_5"
+        android:text="Done"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:textAllCaps="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
