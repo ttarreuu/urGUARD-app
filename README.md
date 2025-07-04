@@ -5,8 +5,8 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/-Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 
-*Screenshot*
-(Update here!)
+## Screenshot
+![urGUARD Screenshot](https://i.ibb.co/5FjKYjz/Screenshot-urGUARD.jpg)
 
 **urGUARD** is an emergency security application designed to assist users in distress. The app features an alarm, automatic location-sharing via message, and a fake call function to help users feel safer in urgent situations. The app is designed with women’s safety in mind, offering an easy-to-use interface and multiple safety features.
 
@@ -21,9 +21,6 @@
 - **Android Studio:** Integrated development environment (IDE) for building the app.
 - **Java:** Primary programming language used for the app.
 - **SQLite:** Local database for managing and storing user data.
-
-## Screenshots
-![Figma Design](https://www.figma.com/design/K87kckm2sbw8Qbrd0a6ulD/Safety-Women-App?node-id=0-1&p=f&t=uDY8yEC2nHY3ZXIc-0)
 
 ## How to Run the Project
 1. Clone the repository:
