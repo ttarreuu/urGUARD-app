@@ -6,7 +6,7 @@
 ![Android Studio](https://img.shields.io/badge/-Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 
 ## Screenshot
-![urGUARD Screenshot]([https://ibb.co/H5z8c2g](https://ibb.co/H5z8c2g))
+![ug4](https://github.com/user-attachments/assets/249c76da-e736-4955-a8d2-cf4bbc9d3c3e)
 
 **urGUARD** is an emergency security application designed to assist users in distress. The app features an alarm, automatic location-sharing via message, and a fake call function to help users feel safer in urgent situations. The app is designed with women’s safety in mind, offering an easy-to-use interface and multiple safety features.
 
